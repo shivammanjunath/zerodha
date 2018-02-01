@@ -6,7 +6,6 @@ def main():
     now = str(datetime.date.today())
     day, month, year = (list(now.split('-'))[::-1])
     print(day, month, year)
-    day = '31'
     
     year = year[2:]
 
