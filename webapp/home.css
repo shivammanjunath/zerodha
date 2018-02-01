@@ -1,0 +1,231 @@
+body, html {
+    color: #4a4a4a;
+    font-family: 'Roboto', serif;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: relative;
+    z-index: 2;
+    flex: none;
+    background-color: #262b3e;
+}
+
+.header-inner {
+    display: flex;
+    height: 54px;
+    max-width: 100%;
+    flex: 0 0 auto;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.header-name {
+    flex-shrink: 0;
+}
+
+.header-logo {
+    position: relative;
+    margin-left: -25px;
+    padding: 0 25px;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    float: left;
+    vertical-align: middle;
+    height: 54px;
+    line-height: 54px;
+    text-decoration: none;
+}
+
+.search {
+    flex-grow: 1;
+    margin: 10px 42px 10px 15px;
+    flex-shrink: 0;
+}
+
+.header-search {
+    display: flex;
+    height: 36px;
+    width: 180px;
+    line-height: 18px;
+    border-radius: 2px;
+    background: rgba(179, 199, 210, .25)
+}
+
+div {
+    display: block;
+}
+
+form {
+    margin-top: 0em;
+}
+
+label {
+    cursor: default;
+}
+
+input {
+    line-height: normal;
+    font: inherit;
+    border-radius: 0;
+}
+
+.search-input {
+    position: relative;
+    flex-grow: 1;
+    display: block;
+}
+
+.search-text {
+    display: block;
+    letter-spacing: .5px;
+    width: 100%;
+    height: 36px;
+    border: none;
+    margin: 0;
+    padding: 9px 36px 9px 10px;
+    background: none;
+    color: white;
+}
+
+.search-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.search-icon svg {
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 9px 10px 9px 9px;
+    fill: #fff;
+}
+
+.sign-in-text {
+    height: 54px;
+    line-height: 54px;
+    float: left;
+    font-size: 14px;
+    margin-right: 0;
+    white-space: nowrap;
+    color: white;
+    cursor: pointer;
+}
+
+.market-quotes-widget {
+    margin: auto;
+    flex: 1 0 auto;
+    width: 50%;
+}
+
+.highlight-background {
+    background: #fff;
+    padding: 69px 0;
+}
+
+.widget-wrapper {
+    width: 0;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: transparent;
+}
+
+.widget-wrapper-body {
+    border: 1px solid #dadde0;
+    box-sizing: border-box;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.quotes-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: #fff;
+}
+
+
+.quotes-table-header {
+    width: 100%;
+    flex-grow: 0;
+}
+
+.quotes-table-header-row {
+    min-height: 50px;
+    color: #758696;
+    border-bottom: 2px solid #eceff2;
+    font-size: 13px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.quotes-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.table-header {
+    background-color: #f7f8fa;
+    display: flex;
+    box-sizing: border-box;
+    align-items: flex-end;
+    padding: 10px;
+    min-height: 36px;
+    color: #4c525e;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+tr {
+    border-bottom: 1px solid #eceff2;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    min-height: 35px;
+    flex-grow: 1;
+}
+
+td {
+    justify-content: center;
+    width: 150px;
+    color: #758696;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+td:first-child {
+    width: 35%;
+    justify-content: flex-start;
+    padding-left: 10px; 
+    align-items: center; overflow: hidden;
+}
+
+li {
+	padding: 5px;
+	cursor: pointer;
+	border-bottom: 1px solid azure;
+}

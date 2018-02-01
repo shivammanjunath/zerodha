@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Bhavcopy Reader</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto:400,500|Inconsolata:400,700|Roboto Mono:400" rel="stylesheet" type="text/css">
+        <link href="home.css" rel="stylesheet"/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="home.js"></script>
+
+    </head>
+    
+    <body>
+        <div class="main">
+            <div class="header">
+                <div class="header-inner">
+                    <div class="header-name">
+                        <a href="/" class="header-logo">
+                            <span>Bhavcopy Reader</span>
+                        </a>
+                    </div>
+                    
+                    <div class="search">
+                        <form class="header-serach">
+                            <label class="search-input">
+                                <input type="search" autocomplete="off" spellcheck="false" placeholder="Search" class="search-text" id="search_txt" onkeydown="return (event.keyCode!=13);">
+                                <span class="search-icon" id="search_icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><g fill="none" fill-rule="evenodd" stroke="#FFF"><circle cx="7.5" cy="7.5" r="6"></circle><path d="M11.5 11.5L15 15"></path></g></svg>
+                                </span>
+                            </label>
+                        </form>
+
+			<div class="search-suggestions" id="search_suggestions" style="margin-top: 12px;">
+				<ul id="search_results" style="width: 100%; background-color: aliceblue; list-style-type:none; overflow: hidden; overflow-y: auto; height: 150px; display:none">
+				</ul>
+			</div>
+
+                    </div>
+                    
+                    <div class="sign-in">
+                        <span class="sign-in-text">
+                            <a>SIGN IN</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="market-quotes-widget">
+            <div class="highlight-background">
+                <div class="widget-wizard" style="width: 900px; height: 450px">
+                    <div style="width: 900px; height: 450px; position: relative">
+                        <!--<iframe scrolling="no" allowtransparency="true" frameborder="0" width="770" height="450" style="box-sizing: border-box; padding-bottom: 32px;">-->
+                            <div class="widget-wrapper">
+                                <div class="widget-wrapper-body" style="height: calc(100% - 34px);">
+                                    <div id="quotes_container" style="height: 100%; width: 100%">
+                                        <div class="quotes-container">
+                                            <div class="quotes-table-header">
+                                                <div class="quotes-table-header-row">
+                                                    <div class="header-field-name" style="justify-content: flex-start; padding-left: 10px; width: 35%; color: #758696; display: flex; align-items: center; overflow: hidden; font-size: 14px">Name</div>
+                                                    <div class="header-field-open" style="justify-content: center; width: 150px; color: #758696; display: flex; align-items: center; overflow: hidden; font-size: 14px">Open</div>
+                                                    <div class="header-field-high" style="justify-content: center; width: 150px; color: #758696; display: flex; align-items: center; overflow: hidden; font-size: 14px">High</div>
+                                                    <div class="header-field-low" style="justify-content: center; width: 150px; color: #758696; display: flex; align-items: center; overflow: hidden; font-size: 14px">Low</div>
+                                                    <div class="header-field-close" style="justify-content: center; width: 150px; color: #758696; display: flex; align-items: center; overflow: hidden; font-size: 14px; padding-right: 25px;">Close</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="quotes-list">
+                                                <div class="table-header" id="table_header">Top-Ten</div>
+                                                <div class="quotes-table">
+                                                    <table id="stock-data-table" style="width: 100%; justify-content: space-between; overflow-x: scroll">
+                                                        
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        <!--</iframe>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>
